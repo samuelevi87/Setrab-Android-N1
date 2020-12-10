@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Digite o primeiro número."
+        android:layout_gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -19,6 +20,7 @@
     <EditText
         android:id="@+id/edt_num1"
         android:inputType="numberSigned"
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"/>
@@ -26,6 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Digite o segundo número."
+        android:layout_gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -33,57 +36,47 @@
     <EditText
         android:id="@+id/edt_num2"
         android:inputType="numberSigned"
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"/>
 
     <Button
-        android:id="@+id/somar"
+        android:id="@+id/btSoma"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="somar"
-        android:onClick="soma"/>
-
-    <TextView
-        android:id="@+id/mostrarSoma"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        />
 
     <Button
-        android:id="@+id/subtracao"
+        android:id="@+id/btSub"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Subtrair"
-        android:onClick="subtracao"/>
-
-    <TextView
-        android:id="@+id/mostrarSubtracao"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        />
 
     <Button
-        android:id="@+id/multiplicacao"
+        android:id="@+id/btMult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Multiplicar"
-        android:onClick="multiplicacao"/>
-
-    <TextView
-        android:id="@+id/mostrarMultiplicacao"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+       />
 
     <Button
-        android:id="@+id/divisao"
+        android:id="@+id/btDiv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Dividir"
-        android:onClick="divisao"/>
+        />
 
     <TextView
-        android:id="@+id/mostrarDivisao"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:id="@+id/mostrarResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:layout_gravity="center"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
 
 
 
