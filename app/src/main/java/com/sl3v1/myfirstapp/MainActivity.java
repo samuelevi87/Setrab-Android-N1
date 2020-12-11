@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
 //        Double mNum1 = Double.parseDouble(num1.getText().toString());
 //        Double mNum2 = Double.parseDouble(num2.getText().toString());
-6
+
         switch (v.getId()) {
             case R.id.btSoma:
                 Double soma = (Double.parseDouble((num1.getText().toString()))) + (Double.parseDouble((num2.getText().toString())));
@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btSub:
                 Double subtrair = (Double.parseDouble((num1.getText().toString()))) - (Double.parseDouble((num2.getText().toString())));
                 mostraResultado.setText((String.valueOf(String.format("%.2f", subtrair))));
+                break;
             case R.id.btMult:
                 Double multiplicacao = (Double.parseDouble((num1.getText().toString()))) * (Double.parseDouble((num2.getText().toString())));
                 mostraResultado.setText((String.valueOf(String.format("%.2f", multiplicacao))));
